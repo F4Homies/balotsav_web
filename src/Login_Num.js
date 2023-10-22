@@ -1,14 +1,15 @@
 
 import React from "react";
+import { Link } from "react-router-dom";
+function Login_Num(props){
 
-function Login(){
-    return(
+    return(  
         <section class="login-box custom">
             <div class="container">
                 <div class="row">     
                     <div class="intro clearfix " >
                         <div class="offset-md-2 offset-lg-2 col-lg-8 col-md-8 col-sm-12 col-xs-12 is-visible">
-                            <form class="form-horizontal" role="form" method="POST" action="" id="thisform">
+                            <form class="form-horizontal" id="thisform">
                                 <input type="hidden" name="_token" value="8Woq1wkqcB3fghwkWuIRo3W1OnvBqZBMsquiXjVH"/>
                                 <div class="row type-margin">
                                     <img class="center" draggable="false"  alt="" aria-hidden="true" src={require("./App Logo.png")} />
@@ -24,7 +25,11 @@ function Login(){
                                             </select>
                                         </div>
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div_spacing">   
-                                            <input type="submit" id="edit-submit" name="op" value="Send OTP" class="form-control-login btn btn-success btn-lg"/>
+                                        <Link to="/login_otp">
+                                            <button className="form-control-login btn btn-success btn-lg" id="edit-submit">
+                                            Send OTP
+                                            </button>
+                                        </Link>
                                         </div>
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div_spacing in-line">
                                             Don't Have Account? <a href="/">Register Now</a>  
@@ -42,6 +47,6 @@ function Login(){
         </section>
     );
 }
-export default Login;
+export default Login_Num;
 
 
