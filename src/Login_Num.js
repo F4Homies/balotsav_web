@@ -26,13 +26,13 @@ function Login_Num(props){
                                         </div>
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div_spacing">   
                                         <Link to="/login_otp">
-                                            <button className="form-control-login btn btn-success btn-lg" id="edit-submit">
+                                            <button className="form-control-login btn btn-success btn-lg" id="Submit_Otp">
                                             Send OTP
                                             </button>
                                         </Link>
                                         </div>
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div_spacing in-line">
-                                            Don't Have Account? <a href="/">Register Now</a>  
+                                            Don't Have Account? <a href="/Spoc_Registration">Register Now</a>  
                                         </div>
                                         <div class="alert alert-info" >
                                             Registration for School SPOC are now open
